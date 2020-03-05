@@ -8,9 +8,12 @@ const App = props => {
      { name: 'Chelsea', age: 26 },
      { name: 'John', age: 29 },
      { name: 'Helen', age: 25 },
-   ],
-   SomeOtherState: 'This is sample text'
+   ]
   });
+
+  const [OtherState, setOtherState] = useState('some other value');
+
+  console.log(personState, OtherState);
 
   const switchNameHandler = () => {
     setPersonsState({
@@ -19,6 +22,8 @@ const App = props => {
         { name: 'John', age: 29 },
         { name: 'Hellz', age: 25 }
       ]
+      //because function does not merge with old state info, manually adding old state data below 
+      //OtherState: personState.OtherState
     });
  console.log('was clicked');
   };
