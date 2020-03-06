@@ -1,8 +1,22 @@
 .Person { 
-    width: 60%;
+    width: 40%;
     margin: auto auto 16px;
-    border: 1px solid #eee;
+    border: 2px solid lightblue;
     box-shadow: 0 2px 3px #ccc;
     padding: 16px;
     text-align: center;
+    border-Radius: 15px;
+    background-color: lightblue;
+}
+
+.Paragraph {
+    font-weight: bold
+}
+
+.TextBox {
+    border: 2px solid black;
+    height: 15px;
+    padding: 7px;
+    background-color: #eee;
+    border-radius: 5px;
 }

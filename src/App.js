@@ -47,7 +47,7 @@ class App extends Component {
         margin: '8px',
         borderRadius: '15px',
         boxShadow: '3px 5px 7px blue',
-        textShadow: '1px 3px 3px blue'
+        textShadow: '1px 3px 3px white',
       };
 
 
@@ -58,7 +58,7 @@ class App extends Component {
       <button 
       style={style}
       onClick={ () => this.switchNameHandler('CHEEEEEEELS') }>Switch Name</button>
-
+      
       <Person 
       name={this.state.persons[0].name} 
       age={this.state.persons[0].age}/>
@@ -79,6 +79,7 @@ class App extends Component {
       </div>
     )
    //return React.createElement('div',{className: 'App'},React.createElement('h1', null, 'DOes this work now'));
+  
      }
 }
 
