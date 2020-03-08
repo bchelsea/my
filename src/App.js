@@ -54,12 +54,12 @@ class App extends Component {
 
      return (
       <div className="App">
-      <h1>Refresher React APP</h1>
+      <h1>LIL APP 1</h1>
       <p>little refresher app with click and event handlers :-)</p> 
 
       <button 
       style={style}
-      onClick={ () => this.switchNameHandler('CHEEEEEEELS') }>Switch Name</button>
+      onClick={ () => this.switchNameHandler('CHEEEEELSEA') }>Switch Name</button>
       
       <div className='Container'>
       
@@ -70,7 +70,7 @@ class App extends Component {
       <Person 
       name={this.state.persons[1].name} 
       age={this.state.persons[1].age}
-      click={this.switchNameHandler.bind(this, 'CHELSEA 2')} 
+      click={this.switchNameHandler.bind(this, 'John Michael!')} 
       changed={this.nameChangedHandler} 
       > My Hobbies: Crafting
       </Person>
