@@ -1,12 +1,9 @@
 .Person { 
-    width: 40%;
-    margin: auto auto 16px;
-    border: 2px solid lightblue;
-    box-shadow: 0 2px 3px #ccc;
+    border: 2px solid  #323232;
+    box-shadow: 0 2px 3px #595959;
     padding: 16px;
     text-align: center;
-    border-Radius: 15px;
-    background-color: lightblue;
+    background-color: #282828;
 }
 
 .Paragraph {
@@ -14,9 +11,7 @@
 }
 
 .TextBox {
-    border: 2px solid black;
     height: 15px;
     padding: 7px;
-    background-color: #eee;
-    border-radius: 5px;
+    box-shadow: 0 2px 3px #595959;
 }

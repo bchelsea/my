@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
+import { white } from 'color-name';
 
 
 class App extends Component {
@@ -12,7 +13,6 @@ class App extends Component {
    ],
    otherState: 'Some other value'
   };
-
 
   switchNameHandler = (newName) => {
     //console.log('this was clicked');
@@ -30,7 +30,7 @@ class App extends Component {
       persons: [
         { name: 'Chelsea', age: 26 },
         { name: event.target.value, age: 29 },
-        { name: 'Hellz', age: 25 }
+        { name: 'Helen', age: 25 }
       ]
     });
     console.log('name change handler triggered');
@@ -39,29 +39,33 @@ class App extends Component {
     render() {
 
       const style = {
-        backgroundColor: 'lightblue',
+        backgroundColor: '#282828',
         font: 'inherit',
-        border: '2px solid lightblue',
+        color: 'white',
+        border: '2px solid  #323232',
         padding: '8px',
         cursor: 'pointer',
         margin: '8px',
-        borderRadius: '15px',
-        boxShadow: '3px 5px 7px blue',
-        textShadow: '1px 3px 3px white',
+        boxShadow: '0px 2px 3px #595959',
+        textShadow: '1px 3px 3px #595959',
       };
+
 
 
      return (
       <div className="App">
       <h1>Refresher React APP</h1>
-      <p>litle refresher app with click and event handlers :-)</p> 
+      <p>little refresher app with click and event handlers :-)</p> 
+
       <button 
       style={style}
       onClick={ () => this.switchNameHandler('CHEEEEEEELS') }>Switch Name</button>
       
-      <Person 
+      <div className='Container'>
+      
+      <Person
       name={this.state.persons[0].name} 
-      age={this.state.persons[0].age}/>
+      age={this.state.persons[0].age} />
 
       <Person 
       name={this.state.persons[1].name} 
@@ -70,12 +74,12 @@ class App extends Component {
       changed={this.nameChangedHandler} 
       > My Hobbies: Crafting
       </Person>
-
-      <Person 
+      
+      <Person
       name={this.state.persons[2].name} 
-      age={this.state.persons[2].age}/>
-      <Person/>
-
+      age={this.state.persons[2].age} />
+      
+      </div>
       </div>
     )
    //return React.createElement('div',{className: 'App'},React.createElement('h1', null, 'DOes this work now'));
